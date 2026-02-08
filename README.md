@@ -34,7 +34,7 @@ The system uses **Python automation** combined with **Google Gemini (2.0 Flash)*
 - **Python**
 - **PyAutoGUI** – OS automation
 - **Telegram Bot API** – Remote command interface
-- **Google Gemini 2.0 Flash** – Natural language + vision understanding
+- **Google Gemini 2.0 Flash** – Natural language & vision understanding
 - **psutil** – System metrics
 - **python-dotenv** – Environment management
 
@@ -46,40 +46,13 @@ The system uses **Python automation** combined with **Google Gemini (2.0 Flash)*
 2. Telegram bot receives and parses the message  
 3. Gemini interprets intent (and screen content when required)  
 4. Python automation executes the action on the Windows system  
-5. Response (text / screenshot) is sent back to Telegram  
+5. Response (text or screenshot) is sent back to Telegram  
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the repository
+### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/challakalyan1729/OS-Control-Agent.git
 cd OS-Control-Agent
-
-## 🛠️ Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/challakalyan1729/OS-Control-Agent.git](https://github.com/challakalyan1729/OS-Control-Agent.git)
-    cd OS-Control-Agent
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    pip install pyTelegramBotAPI pyautogui google-generativeai psutil requests python-dotenv
-    ```
-
-3.  **Setup Keys:**
-    * Create a file named `keys.py` in the project folder.
-    * Add your API keys like this:
-        ```python
-        TELEGRAM_TOKEN = "YOUR_BOT_TOKEN"
-        GEMINI_KEY = "YOUR_GEMINI_API_KEY"
-        ```
-
-## 🎮 Usage
-
-Run the bot:
-```bash
-python start.py
