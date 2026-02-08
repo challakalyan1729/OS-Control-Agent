@@ -56,3 +56,44 @@ The system uses **Python automation** combined with **Google Gemini (2.0 Flash)*
 ```bash
 git clone https://github.com/challakalyan1729/OS-Control-Agent.git
 cd OS-Control-Agent
+```
+> ⚠️ Note: This project currently supports **Windows OS only**.
+> 
+##2️⃣ Install dependencies
+```bash
+pip install pyTelegramBotAPI pyautogui google-generativeai psutil requests python-dotenv
+```
+###3️⃣ Set up API keys
+Create a file named keys.py in the project root directory:
+
+```python
+TELEGRAM_TOKEN = "YOUR_BOT_TOKEN"
+GEMINI_KEY = "YOUR_GEMINI_API_KEY"
+```
+⚠️ Do not commit this file to GitHub.
+
+▶️ Run the bot:
+```
+python start.py
+```
+🔐 Security Warning
+
+⚠️ This project provides direct OS-level control.
+
+Use only on personal or test systems
+
+Never expose your Telegram bot token publicly
+
+Avoid deploying on shared machines
+
+🤝 AI-Assisted Development Disclosure
+
+This project was developed using AI-assisted workflows (Google Gemini) for:
+
+Rapid prototyping
+
+Natural-language command interpretation
+
+Documentation support
+
+All automation logic, system integration, testing, and validation were performed by the developer.
